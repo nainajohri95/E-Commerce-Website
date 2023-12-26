@@ -4,8 +4,7 @@
   align-items: center;
   gap: 10px;
   height: 90vh;
-  /* overflow-y: hidden;
-  overflow-x: hidden; */
+  /* overflow: hidden; */
 }
 
 .popular h1 {
