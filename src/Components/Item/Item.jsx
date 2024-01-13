@@ -6,7 +6,7 @@ const Item = (props) => {
   return (
     <div className="item">
       <Link to={`/product/${props.id}`}>
-        <img src={props.image} alt="" />
+        <img onClick={window.scrollTo(0, 0)} src={props.image} alt="" />
       </Link>
       <p>{props.name}</p>
       <div className="item-prices">
@@ -18,3 +18,5 @@ const Item = (props) => {
 };
 
 export default Item;
+
+//window.scrollTo(0, 0) when we click on any product we will reach to the top of the page
