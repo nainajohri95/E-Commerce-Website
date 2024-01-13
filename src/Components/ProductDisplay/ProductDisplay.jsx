@@ -51,6 +51,18 @@ const ProductDisplay = (props) => {
             <div>XXL</div>
           </div>
         </div>
+        <button>ADD TO CART</button>
+        <p className="productdisplay-right-category">
+          <span>
+            Category : <span>Women, T-Shirt, Crop Top </span>
+          </span>
+        </p>
+
+        <p className="productdisplay-right-category">
+          <span>
+            Tags : <span>Modern, Latest </span>
+          </span>
+        </p>
       </div>
     </div>
   );
