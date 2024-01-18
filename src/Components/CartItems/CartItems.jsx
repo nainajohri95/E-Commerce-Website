@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import "../CartItems.css";
+import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../Assets/cart_cross_icon.png";
 
 const CartItems = () => {
-  const { all_product, CartItems, removeFromCart } = useContext(ShopContext);
+  const { all_product, cartItems, removeFromCart } = useContext(ShopContext);
   return (
     <div className="cartitems">
       <div className="cartItems-format-main">
@@ -18,7 +18,7 @@ const CartItems = () => {
       <hr />
 
       {all_product.map((e) => {
-        if (CartItems[e.id] > 0) {
+        if (cartItems[e.id] > 0) {
           //means product is already available
           return (
             <div>
@@ -27,9 +27,9 @@ const CartItems = () => {
                 <p>{e.name}</p>
                 <p>${e.new_price}</p>
                 <button className="cartitems-quantity">
-                  {CartItems[e.id]}
+                  {cartItems[e.id]}
                 </button>
-                <p>{e.new_price * CartItems[e.id]}</p>
+                <p>{e.new_price * cartItems[e.id]}</p>
                 <img
                   src={remove_icon}
                   onClick={() => {
