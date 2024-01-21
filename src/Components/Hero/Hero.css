@@ -47,6 +47,7 @@
   background: #ff4141;
   font-size: 22px;
   font-weight: 500;
+  color: white;
 }
 
 .hero-right {
@@ -54,4 +55,34 @@
   display: flex;
   /* align-items: center; */
   justify-content: center;
+}
+
+@media (max-width: 1280px) {
+  .hero-left {
+    padding-left: 100px;
+  }
+
+  .hero-left h2 {
+    font-size: 22px;
+  }
+
+  .hero-left p {
+    font-size: 50px;
+  }
+
+  .hero-hand-icon img {
+    width: 50px;
+  }
+
+  .hero-latest-btn {
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .hero-right img {
+    width: 500px;
+  }
 }
