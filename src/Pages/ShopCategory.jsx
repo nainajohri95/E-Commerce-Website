@@ -3,12 +3,13 @@ import "./CSS/ShopCategory.css";
 import { ShopContext } from "../Context/ShopContext";
 import dropdown_icon from "../Components/Assets/dropdownIcon2.png";
 import Item from "../Components/Item/Item";
+
 const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
 
   return (
     <div className="shop-catrgory">
-      <img src={props.banner} alt="" />
+      <img className="shopcategory-banner" src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
         <p>
           <span>Showing 1-12</span> out of 36 products
